@@ -1,0 +1,10 @@
+language: python
+python:
+- "3.8.6"
+install: 
+- pip install xmlrunner
+- pip install unittest_xml_reporting
+- pip install coverage
+script:
+- python test_xmlrunner.py
+- coverage run test_runner.py
